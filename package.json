@@ -1,0 +1,13 @@
+{
+  "name": "nexstream",
+  "version": "1.0.0",
+  "description": "NexStream - SFU-based video conferencing",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "dev:server": "cd server && npm run dev",
+    "setup": "npm run install:all"
+  },
+  "workspaces": ["server", "client"]
+}
